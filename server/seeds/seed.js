@@ -1,5 +1,5 @@
 const db = require('../config/connection');
-const { Course } = require('../models');
+const { Course } = require('../models/Course');
 
 const courseData = require('./courseData.json');
 
