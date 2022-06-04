@@ -14,7 +14,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "seed" : "/seeds/seed.js",
+    "seed" : "server/seeds/seed.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
