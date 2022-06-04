@@ -1,0 +1,97 @@
+[
+  {
+    "courseName": "City Park Golf Course",
+    "holes": [
+      {
+        "number": 1,
+        "par": 4,
+        "yardage": 418
+      },
+      {
+        "number": 2,
+        "par": 3,
+        "yardage": 235
+      },
+      {
+        "number": 3,
+        "par": 4,
+        "yardage": 366
+      },
+      {
+        "number": 4,
+        "par": 4,
+        "yardage": 434
+      },
+      {
+        "number": 5,
+        "par": 3,
+        "yardage": 204
+      },
+      {
+        "number": 6,
+        "par": 4,
+        "yardage": 327
+      },
+      {
+        "number": 7,
+        "par": 4,
+        "yardage": 362
+      },
+      {
+        "number": 8,
+        "par": 3,
+        "yardage": 195
+      },
+      {
+        "number": 9,
+        "par": 5,
+        "yardage": 542
+      },
+      {
+        "number": 10,
+        "par": 4,
+        "yardage": 368
+      },
+      {
+        "number": 11,
+        "par": 4,
+        "yardage": 457
+      },
+      {
+        "number": 12,
+        "par": 3,
+        "yardage": 145
+      },
+      {
+        "number": 13,
+        "par": 5,
+        "yardage": 450
+      },
+      {
+        "number": 14,
+        "par": 4,
+        "yardage": 379
+      },
+      {
+        "number": 15,
+        "par": 4,
+        "yardage": 423
+      },
+      {
+        "number": 16,
+        "par": 5,
+        "yardage": 590
+      },
+      {
+        "number": 17,
+        "par": 3,
+        "yardage": 201
+      },
+      {
+        "number": 18,
+        "par": 4,
+        "yardage": 396
+      }
+    ]
+  }
+]
