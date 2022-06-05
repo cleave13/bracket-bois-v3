@@ -10,7 +10,12 @@ const courseSchema = new Schema(
             unique: true,
             trim: true,
         },
-        holes: [holeSchema],
+        holes: [
+            {
+                type: Schema.Types.ObjectId,
+                ref: 'hole'
+            }
+        ],
     },
     {
         toJSON: {
