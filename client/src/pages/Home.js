@@ -4,9 +4,8 @@
 
 import Navigation from '../components/Nav';
 import Card from '../components/Card';
-const Home = () => {
-  
 
+const Home = () => {
   return (
     <div>
       <Navigation />

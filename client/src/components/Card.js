@@ -8,6 +8,9 @@ import * as React from 'react';
 // import Paper from '@mui/material/Paper';
 const holes = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18'];
 
+//will be populated or inputed by user
+const scores = ['']
+
 function createData(name, ...holes) {
   return { name, ...holes};
 }
@@ -24,12 +27,21 @@ const rows = [
 function Card() {
   return(
     <div>
+      <h1>hi</h1>
         <table>
-          {holes.map((hole) => (
-            <tr key={hole.name}>
-              <td>{hole.name}</td>
-            </tr>
-          ))}
+          <tbody>
+            <th>holes</th>
+            
+            {holes.map((hole , i) => (
+              <th key={i}>
+                <td>{hole}</td>
+              </th>
+            ))}
+            <th style={{color: "red"}}>initials</th>
+            <tr>blue</tr>
+            {// populate columns for the rest of the row}
+          </tbody>
+          
         </table>
     </div>
   )
