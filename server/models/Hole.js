@@ -25,10 +25,9 @@ const holeSchema = new Schema(
     toJSON: {
       virtuals: true,
     },
-    id: false,
   }
 );
 
-const Hole = model('hole', holeSchema);
+const Hole = model('Hole', holeSchema);
 
 module.exports = Hole;
