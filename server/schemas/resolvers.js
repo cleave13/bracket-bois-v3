@@ -8,5 +8,5 @@ const resolvers = {
       user: async (parent, { username }) => {
         return User.findOne({ username }).populate('thoughts');
       },
-
+    }
 }
