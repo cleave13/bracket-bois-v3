@@ -39,7 +39,6 @@ function Card() {
             ))}
             <th style={{color: "red"}}>initials</th>
             <tr>blue</tr>
-            {// populate columns for the rest of the row}
           </tbody>
           
         </table>
@@ -48,42 +47,3 @@ function Card() {
 }
 
 export default Card;
-
-// export default function BasicTable() {
-//   return (
-//     <TableContainer component={Paper}>
-//       <Table sx={{ minWidth: 650 }} aria-label="simple table">
-//         <TableHead>
-//           <TableRow>
-//             <TableCell>Hole</TableCell>
-//             <TableCell align="right">Calories</TableCell>
-//             <TableCell align="right">Fat&nbsp;(g)</TableCell>
-//             <TableCell align="right">Carbs&nbsp;(g)</TableCell>
-//             <TableCell align="right">Protein&nbsp;(g)</TableCell>
-//           </TableRow> */}
-//         </TableHead>
-//         <TableBody>
-//           {rows.map((row) => (
-//             <TableRow
-//               key={row.name}
-//               sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
-//             >
-//               {
-//                 for(i=0; i < columns; i++ {
-
-//                 })
-//               }
-//               <TableCell component="th" scope="row">
-//                 {row.name}
-//               </TableCell>
-//               <TableCell align="right">{row.holes}</TableCell>
-//               <TableCell align="right">{row.fat}</TableCell>
-//               <TableCell align="right">{row.carbs}</TableCell>
-//               <TableCell align="right">{row.protein}</TableCell>
-//             </TableRow>
-//           ))}
-//         </TableBody>
-//       </Table>
-//     </TableContainer>
-//   );
-// }
