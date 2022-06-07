@@ -9,21 +9,18 @@ const courseSchema = new Schema(
             unique: true,
             trim: true,
         },
-        holes: [
-            {
-                type: Schema.Types.ObjectId,
-                ref: 'hole'
-            }
-        ],
+        holes:{
+                type: Schema.Types.Array,
+                ref: 'Hole'
+            },
     },
     {
         toJSON: {
             virtuals: true,
         },
-        id: false,
     }
 );
 
-const Course = model('course', courseSchema);
+const Course = model('Course', courseSchema);
 
 module.exports = Course;
