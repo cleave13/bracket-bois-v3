@@ -1,5 +1,4 @@
 const { Schema, model } = require('mongoose');
-const holeSchema = require('./Hole')
 
 // Schema to create Course model
 const courseSchema = new Schema(
@@ -10,7 +9,12 @@ const courseSchema = new Schema(
             unique: true,
             trim: true,
         },
-        holes: [holeSchema],
+        holes: [
+            {
+                type: Schema.Types.ObjectId,
+                ref: 'hole'
+            }
+        ],
     },
     {
         toJSON: {
