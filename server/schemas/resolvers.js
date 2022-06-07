@@ -9,16 +9,15 @@ const resolvers = {
         return User.find().populate('rounds');
       },
       user: async (parent, { username }) => {
-        return User.findOne({ username }).populate('thoughts');
+        return User.findOne({ username }).populate('rounds');
       },
       round: async () => {
         return Round.find({});
       },
-      course: async (parent, { _id }) => {
-        const params = _id ? { _id } : {};
-        return Course.find(params);
+      course: async () => {
+        return Course.find({});
       },
-      hole: async (parent, { _id }) => {
+      holes: async (parent, { _id }) => {
         const params = _id ? { _id } : {};
         return Hole.find(params);
       },

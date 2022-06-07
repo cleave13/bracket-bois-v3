@@ -12,7 +12,10 @@ const roundSchema = new Schema(
       type: Date,
       required: true,
     },
-    course: courseSchema,
+    course: {
+      type: Schema.Types.ObjectId,
+      ref: 'Course'
+    }
   },
   {
     toJSON: {
@@ -22,6 +25,6 @@ const roundSchema = new Schema(
   }
 );
 
-const Round = model('round', roundSchema);
+const Round = model('Round', roundSchema);
 
 module.exports = Round;

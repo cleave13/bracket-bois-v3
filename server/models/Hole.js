@@ -29,6 +29,6 @@ const holeSchema = new Schema(
   }
 );
 
-const Hole = model('hole', holeSchema);
+const Hole = model('Hole', holeSchema);
 
 module.exports = Hole;

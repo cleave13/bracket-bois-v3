@@ -14,14 +14,13 @@ const typeDefs = gql`
   type Round {
     _id: ID
     playerName(username: String!): User
-    date: Date
     course: Course
   }
 
   type Course {
     _id: ID
     courseName: String
-    holes: [Hole]!
+    holes: [Hole]
   }
 
   type Hole {
@@ -40,14 +39,17 @@ const typeDefs = gql`
   type Query {
     users: [User]
     user(username: String!): User
+    course: [Course]
+    holes: [Hole]
     rounds(username: String): [Round]
-    round(roundId: ID!): Round
+    round: [Round]
     me: User
   }
 
   type Mutation {
     addUser(username: String!, email: String!, password: String!): Auth
     login(email: String!, password: String!): Auth
+    addRound(playerName: String!, date: Date, course: String): Auth
   }
 `;
 
