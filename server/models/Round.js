@@ -12,10 +12,10 @@ const roundSchema = new Schema(
       type: Date,
       required: true,
     },
-    course: {
+    course:  {
       type: Schema.Types.ObjectId,
       ref: 'Course'
-    }
+  },
   },
   {
     toJSON: {
