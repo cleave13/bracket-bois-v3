@@ -11,10 +11,40 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
+#scorecard {
+  margin: 0 auto;
+  text-align: center;
+}
 .navbar {
   background-color: lightblue;
   display: flex;
   justify-content: space-around;
   padding: 10px;
+}
+
+table {
+  padding: 15px;
+  margin: 20px;
+  margin: 0 auto;
+  background-color: lightblue;
+  width: 90vw;
+  border-radius: 8px;
+  
+}
+
+th {
+  color: blue;
+  text-align: left;
+  font-weight: normal;
+}
+td {
+  text-align: center;
+}
+p {
+  /* background-color: pink; */
+}
+.spanner {
+  /* background-color: white; */
+  text-align: center;
+  width: 40px;
 }

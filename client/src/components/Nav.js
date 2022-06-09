@@ -1,13 +1,12 @@
 import React from "react";
 
-
 function Navigation() {
   return(
     <div className="navbar">
-      <a href="home">Home</a>
-      <a href="home">Profile</a>
-      <a href="home">Login</a>
-      <a href="home">Logout</a>
+        <a href="home">Home</a>
+        <a href="profile">Profile</a>
+        <a href="login">Login</a>
+        <a href="signup">Signup</a>
     </div>
   )
 }
