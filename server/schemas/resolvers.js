@@ -71,6 +71,8 @@ const resolvers = {
           course,
         });
 
+        
+
         await User.findOneAndUpdate(
           { _id: context.user._id },
           { $addToSet: { rounds: round._id } }
@@ -78,9 +80,21 @@ const resolvers = {
 
         return round;
       }
-      }
-    },
+      },
+      addScore: async (parent, { score }) => {
+          const hole = await Hole.updateOne({
+            score
+          });
 
+          await User.findOneAndUpdate(
+          { _id: context.user._id },
+          { $addToSet: { scores: hole.score } }
+          );
+
+          return hole;
+        }
+    },
+      
 };
 
 module.exports = resolvers;

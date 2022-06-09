@@ -50,6 +50,7 @@ const typeDefs = gql`
     addUser(username: String!, email: String!, password: String!): Auth
     login(email: String!, password: String!): Auth
     addRound(playerName: String!, date: Date, course: String): Auth
+    addScore(score: Int!)
   }
 `;
 
