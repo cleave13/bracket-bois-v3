@@ -9,6 +9,15 @@ const courseSchema = new Schema(
             unique: true,
             trim: true,
         },
+        imagePath: {
+            type: String,
+        },
+        alt: {
+            type: String,
+        },
+        description: {
+            type: String,
+        },
         holes:{
                 type: Schema.Types.Array,
                 ref: 'Hole'

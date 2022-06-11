@@ -20,6 +20,9 @@ const typeDefs = gql`
   type Course {
     _id: ID
     courseName: String
+    imagePath: String
+    alt: String
+    description: String
     holes: [Hole]
   }
 
@@ -50,7 +53,7 @@ const typeDefs = gql`
     addUser(username: String!, email: String!, password: String!): Auth
     login(email: String!, password: String!): Auth
     addRound(playerName: String!, date: Date, course: String): Auth
-    addScore(score: Int!)
+    addScore(score: Int!) : Hole
   }
 `;
 
