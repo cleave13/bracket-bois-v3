@@ -1,7 +1,8 @@
-const { Course, Hole, Round } = require('../models');
+const { Course, Hole, Round, User } = require('../models');
 const { AuthenticationError } = require('apollo-server-express');
 const { signToken } = require('../utils/auth');
 const { Kind, GraphQLScalarType } = require('graphql');
+
 
 const resolvers = {
     Query: {

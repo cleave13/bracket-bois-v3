@@ -64,3 +64,9 @@ form {
   width: 50%;
 
 }
+
+.submit-btn {
+  background-color: red;
+  margin-top: 10px;
+  padding-top: 10px;
+}
