@@ -10,3 +10,12 @@ export const QUERY_USER = gql`
     }
   }
 `;
+
+export const QUERY_COURSES = gql`
+  query course {
+    course {
+      _id
+      courseName
+    }
+  }
+`;

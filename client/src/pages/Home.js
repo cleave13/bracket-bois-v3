@@ -1,9 +1,11 @@
-// import { Link } from 'react-router-dom';
-// import { useQuery } from '@apollo/client';
-// import { QUERY_MATCHUPS } from '../utils/queries';
+import { Link } from 'react-router-dom';
+import { useQuery } from '@apollo/client';
+import { QUERY_COURSES } from '../utils/queries';
 
 import Navigation from '../components/Nav';
 import CourseTile from '../components/CourseTile';
+
+
 const courseSeeds = [
   {
     "courseName": "City Park Golf Course",
@@ -596,17 +598,28 @@ const courseSeeds = [
 ]
 
 const Home = () => {
+  const { loading, data } = useQuery(QUERY_COURSES, {
+    fetchPolicy: "no-cache"
+  });
 
-  console.log(courseSeeds);
+  const courseList = data?.matchups || [];
+
+  console.log(`courseList: ${courseList}`);
 
   return (
     <div>
       <Navigation />
       <main>
         <h1>Denver Municipal Golf Courses</h1>
-        {courseSeeds.map((course, i) => (
-          <CourseTile key={i} course={course} />
-        ))}
+        {loading ? (
+          <div>Loading...</div>
+        ) : (
+          <div>
+            return {courseSeeds.map((course, i) => (
+              <CourseTile key={i} course={course} />
+            ))}
+          </div>
+        )};
       </main>
 
     </div>
