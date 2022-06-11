@@ -7,6 +7,8 @@ import { ADD_USER } from "../utils/mutations";
 import Auth from '../utils/auth';
 
 import TextField from "@mui/material/TextField";
+import Button from "@mui/material/Button";
+// import Link from "@mui/material/Link";
 
 const Signup = () => {
   const [formState, setFormState] = useState({
@@ -14,7 +16,7 @@ const Signup = () => {
     email: '',
     password: '',
   });
-  const [addUser, {error, data }] = useMutation(ADD_USER);
+  const [addUser] = useMutation(ADD_USER);
 
   //update state based on form input changes
   const handleChange = (event) => {
@@ -25,7 +27,7 @@ const Signup = () => {
       [name]: value,
     });
   };
-
+  
   //submit form
   const handleFormSubmit = async (event) => {
     event.preventDefault();
@@ -36,7 +38,7 @@ const Signup = () => {
         variables: { ...formState },
       });
 
-      Auth.login(data.addProfile.token);
+      Auth.login(data.addUser.token);
     } catch (e) {
       console.error(e);
     }
@@ -72,13 +74,16 @@ const Signup = () => {
           <TextField
             margin="dense"
             fullWidth
-            type="text"
+            label="password"
+            type="password"
             name="password"
             value={formState.name}
             onChange={handleChange}
             placeholder="Password" 
           />
-            
+          <Button sx={{mt:3}} component="button" className="submit-btn" variant="contained" type="submit" onClick={() => { console.log('button clicked')}}>Submit</Button>
+          <br></br><br></br>
+          <a href="login">Already registered? Log in here.</a>
 
 
         </form>
