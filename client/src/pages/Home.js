@@ -18,7 +18,7 @@ const Home = () => {
     <div>
       <Navigation />
       <main>
-        <h1>Denver Municipal Golf Courses</h1>
+        <h1>Select a Denver Municipal Golf Course</h1>
         {loading ? (
           <div>Loading...</div>
         ) : (
