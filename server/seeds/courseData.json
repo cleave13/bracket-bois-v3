@@ -93,5 +93,480 @@
         "yardage": 396
       }
     ]
+  },
+  {
+    "courseName": "Willis Case Golf Course",
+    "holes": [
+      {
+        "number": 1,
+        "par": 4,
+        "yardage": 428
+      },
+      {
+        "number": 2,
+        "par": 3,
+        "yardage": 215
+      },
+      {
+        "number": 3,
+        "par": 4,
+        "yardage": 391
+      },
+      {
+        "number": 4,
+        "par": 3,
+        "yardage": 155
+      },
+      {
+        "number": 5,
+        "par": 5,
+        "yardage": 576
+      },
+      {
+        "number": 6,
+        "par": 4,
+        "yardage": 448
+      },
+      {
+        "number": 7,
+        "par": 4,
+        "yardage": 441
+      },
+      {
+        "number": 8,
+        "par": 4,
+        "yardage": 366
+      },
+      {
+        "number": 9,
+        "par": 4,
+        "yardage": 367
+      },
+      {
+        "number": 10,
+        "par": 3,
+        "yardage": 146
+      },
+      {
+        "number": 11,
+        "par": 4,
+        "yardage": 338
+      },
+      {
+        "number": 12,
+        "par": 5,
+        "yardage": 484
+      },
+      {
+        "number": 13,
+        "par": 4,
+        "yardage": 314
+      },
+      {
+        "number": 14,
+        "par": 4,
+        "yardage": 303
+      },
+      {
+        "number": 15,
+        "par": 4,
+        "yardage": 379
+      },
+      {
+        "number": 16,
+        "par": 4,
+        "yardage": 376
+      },
+      {
+        "number": 17,
+        "par": 3,
+        "yardage": 172
+      },
+      {
+        "number": 18,
+        "par": 4,
+        "yardage": 424
+      }
+    ]
+  },
+  {
+    "courseName": "Wellshire Golf Course",
+    "holes": [
+      {
+        "number": 1,
+        "par": 5,
+        "yardage": 515
+      },
+      {
+        "number": 2,
+        "par": 3,
+        "yardage": 172
+      },
+      {
+        "number": 3,
+        "par": 4,
+        "yardage": 366
+      },
+      {
+        "number": 4,
+        "par": 4,
+        "yardage": 423
+      },
+      {
+        "number": 5,
+        "par": 4,
+        "yardage": 418
+      },
+      {
+        "number": 6,
+        "par": 4,
+        "yardage": 354
+      },
+      {
+        "number": 7,
+        "par": 4,
+        "yardage": 408
+      },
+      {
+        "number": 8,
+        "par": 4,
+        "yardage": 309
+      },
+      {
+        "number": 9,
+        "par": 3,
+        "yardage": 157
+      },
+      {
+        "number": 10,
+        "par": 4,
+        "yardage": 467
+      },
+      {
+        "number": 11,
+        "par": 3,
+        "yardage": 139
+      },
+      {
+        "number": 12,
+        "par": 4,
+        "yardage": 470
+      },
+      {
+        "number": 13,
+        "par": 4,
+        "yardage": 442
+      },
+      {
+        "number": 14,
+        "par": 3,
+        "yardage": 223
+      },
+      {
+        "number": 15,
+        "par": 4,
+        "yardage": 363
+      },
+      {
+        "number": 16,
+        "par": 4,
+        "yardage": 392
+      },
+      {
+        "number": 17,
+        "par": 4,
+        "yardage": 391
+      },
+      {
+        "number": 18,
+        "par": 5,
+        "yardage": 474
+      }
+    ]
+  },
+  {
+    "courseName": "Overland Park Golf Course",
+    "holes": [
+      {
+        "number": 1,
+        "par": 4,
+        "yardage": 390
+      },
+      {
+        "number": 2,
+        "par": 3,
+        "yardage": 165
+      },
+      {
+        "number": 3,
+        "par": 5,
+        "yardage": 508
+      },
+      {
+        "number": 4,
+        "par": 4,
+        "yardage": 437
+      },
+      {
+        "number": 5,
+        "par": 4,
+        "yardage": 327
+      },
+      {
+        "number": 6,
+        "par": 4,
+        "yardage": 396
+      },
+      {
+        "number": 7,
+        "par": 4,
+        "yardage": 416
+      },
+      {
+        "number": 8,
+        "par": 3,
+        "yardage": 151
+      },
+      {
+        "number": 9,
+        "par": 5,
+        "yardage": 489
+      },
+      {
+        "number": 10,
+        "par": 3,
+        "yardage": 161
+      },
+      {
+        "number": 11,
+        "par": 4,
+        "yardage": 366
+      },
+      {
+        "number": 12,
+        "par": 4,
+        "yardage": 374
+      },
+      {
+        "number": 13,
+        "par": 5,
+        "yardage": 493
+      },
+      {
+        "number": 14,
+        "par": 4,
+        "yardage": 422
+      },
+      {
+        "number": 15,
+        "par": 4,
+        "yardage": 402
+      },
+      {
+        "number": 16,
+        "par": 3,
+        "yardage": 202
+      },
+      {
+        "number": 17,
+        "par": 4,
+        "yardage": 306
+      },
+      {
+        "number": 18,
+        "par": 5,
+        "yardage": 529
+      }
+    ]
+  },
+  {
+    "courseName": "Kennedy Golf Course - Creek/Babe Lind",
+    "holes": [
+      {
+        "number": 1,
+        "par": 5,
+        "yardage": 494
+      },
+      {
+        "number": 2,
+        "par": 4,
+        "yardage": 442
+      },
+      {
+        "number": 3,
+        "par": 3,
+        "yardage": 224
+      },
+      {
+        "number": 4,
+        "par": 4,
+        "yardage": 349
+      },
+      {
+        "number": 5,
+        "par": 3,
+        "yardage": 180
+      },
+      {
+        "number": 6,
+        "par": 4,
+        "yardage": 442
+      },
+      {
+        "number": 7,
+        "par": 5,
+        "yardage": 592
+      },
+      {
+        "number": 8,
+        "par": 4,
+        "yardage": 406
+      },
+      {
+        "number": 9,
+        "par": 4,
+        "yardage": 414
+      },
+      {
+        "number": 10,
+        "par": 4,
+        "yardage": 403
+      },
+      {
+        "number": 11,
+        "par": 4,
+        "yardage": 321
+      },
+      {
+        "number": 12,
+        "par": 4,
+        "yardage": 374
+      },
+      {
+        "number": 13,
+        "par": 4,
+        "yardage": 438
+      },
+      {
+        "number": 14,
+        "par": 3,
+        "yardage": 165
+      },
+      {
+        "number": 15,
+        "par": 5,
+        "yardage": 532
+      },
+      {
+        "number": 16,
+        "par": 3,
+        "yardage": 148
+      },
+      {
+        "number": 17,
+        "par": 4,
+        "yardage": 427
+      },
+      {
+        "number": 18,
+        "par": 4,
+        "yardage": 413
+      }
+    ]
+  },
+  {
+    "courseName": "Evergreen Golf Course",
+    "holes": [
+      {
+        "number": 1,
+        "par": 4,
+        "yardage": 285
+      },
+      {
+        "number": 2,
+        "par": 4,
+        "yardage": 327
+      },
+      {
+        "number": 3,
+        "par": 3,
+        "yardage": 104
+      },
+      {
+        "number": 4,
+        "par": 4,
+        "yardage": 309
+      },
+      {
+        "number": 5,
+        "par": 5,
+        "yardage": 480
+      },
+      {
+        "number": 6,
+        "par": 3,
+        "yardage": 165
+      },
+      {
+        "number": 7,
+        "par": 5,
+        "yardage": 440
+      },
+      {
+        "number": 8,
+        "par": 3,
+        "yardage": 134
+      },
+      {
+        "number": 9,
+        "par": 4,
+        "yardage": 365
+      },
+      {
+        "number": 10,
+        "par": 3,
+        "yardage": 146
+      },
+      {
+        "number": 11,
+        "par": 5,
+        "yardage": 463
+      },
+      {
+        "number": 12,
+        "par": 3,
+        "yardage": 143
+      },
+      {
+        "number": 13,
+        "par": 4,
+        "yardage": 330
+      },
+      {
+        "number": 14,
+        "par": 4,
+        "yardage": 255
+      },
+      {
+        "number": 15,
+        "par": 4,
+        "yardage": 281
+      },
+      {
+        "number": 16,
+        "par": 3,
+        "yardage": 123
+      },
+      {
+        "number": 17,
+        "par": 4,
+        "yardage": 289
+      },
+      {
+        "number": 18,
+        "par": 4,
+        "yardage": 286
+      }
+    ]
   }
 ]
