@@ -12,10 +12,20 @@ export const QUERY_USER = gql`
 `;
 
 export const QUERY_COURSES = gql`
-  query course {
-    course {
+query Courses {
+  course {
+    _id
+    courseName
+    imagePath
+    alt
+    description
+    holes {
       _id
-      courseName
+      number
+      par
+      yardage
+      score
     }
   }
+}
 `;
