@@ -1,31 +1,31 @@
 import * as React from 'react';
 import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import { CardActionArea } from '@mui/material';
 
 function CourseTile(props) {
+  const course = props.course;
+  
   return (
     <Card sx={{ maxWidth: 345 }}>
+      <CardActionArea>
       <CardMedia
         component="img"
         height="140"
-        image={props.image}
-        alt={props.alt}
+        image={course.imagePath}
+        alt={course.alt}
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          {props.courseName}
+          {course.courseName}
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          {props.description}
+          {course.description}
         </Typography>
       </CardContent>
-      <CardActions>
-        <Button size="small">Play Now</Button>
-      </CardActions>
+      </CardActionArea>
     </Card>
   );
 }
