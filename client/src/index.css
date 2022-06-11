@@ -33,18 +33,34 @@ table {
 }
 
 th {
-  color: blue;
+  color: rgba(20, 20, 20, 0.658);
   text-align: left;
-  font-weight: normal;
+  font-weight: bold;
 }
+
 td {
   text-align: center;
 }
-p {
-  /* background-color: pink; */
-}
+
 .spanner {
   /* background-color: white; */
   text-align: center;
-  width: 40px;
+  width: 50px;
+}
+
+div {
+  margin: 0;
+  padding: 0;
+}
+
+form {
+ 
+  width: 100%;
+}
+
+.login {
+  text-align: center;
+  margin: 0 auto;
+  width: 50%;
+
 }

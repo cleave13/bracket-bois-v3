@@ -3,9 +3,38 @@ import * as React from 'react';
 // const holes =  ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18'];
 const frontNine = ['1', '2', '3', '4', '5', '6', '7', '8', '9'];
 const backNine = ['10', '11', '12', '13', '14', '15', '16', '17', '18'];
+
+const fakeFrontYards = [418, 235, 366, 434, 204, 327, 362, 195, 542];
+const fakeBackYards = [368, 457, 145, 450, 379, 423, 590, 201, 396];
+
+const fakeFrontOut = fakeFrontYards.reduce(function(a, b) {
+  return a +b;
+}, 0);
+
+const fakeFrontIn = fakeBackYards.reduce(function(a,b) {
+  return a + b;
+}, 0);
+
+const fakeTot = fakeFrontOut + fakeFrontIn;
+
+
 const fakeParsFront = [4, 3, 4, 4, 3, 4, 4, 3, 5];
+const fakeParsBack = [4, 4, 3, 5, 4, 4, 5, 3, 4];
+
+const fakeFrontParsOut = fakeParsFront.reduce(function(a,b) {
+  return a + b;
+}, 0);
+
+const fakeBackParsIn = fakeParsBack.reduce(function(a, b) {
+  return a + b;
+}, 0);
+
+const fakeParsTot = fakeBackParsIn + fakeFrontParsOut;
+
+
 //will be populated or inputed by user
 // const scores = ['']
+
 
 
 function Card() {
@@ -34,17 +63,19 @@ function Card() {
 
             <tr>
               <th>YARDS</th>
-              {frontNine.map((hole , i) => (
+              {fakeFrontYards.map((hole , i) => (
               <td key={i}>
                   <p>{hole}</p>
                </td>
               ))}
-              <td className="spanner"></td>
-              {backNine.map((hole , i) => (
+              <td className="spanner">{fakeFrontOut}</td>
+              {fakeBackYards.map((hole , i) => (
               <td key={i}>
                   <p>{hole}</p>
                </td>
               ))}
+              <td>{fakeFrontIn}</td>
+              <td>{fakeTot}</td>
             </tr>
 
 
@@ -55,12 +86,14 @@ function Card() {
                   <p>{hole}</p>
                </td>
               ))}
-              <td className="spanner"></td>
-              {backNine.map((hole , i) => (
+              <td className="spanner">{fakeFrontParsOut}</td>
+              {fakeParsBack.map((hole , i) => (
               <td key={i}>
                   <p>{hole}</p>
                </td>
               ))}
+              <td>{fakeBackParsIn}</td>
+              <td>{fakeParsTot}</td>
             </tr>
 
 
