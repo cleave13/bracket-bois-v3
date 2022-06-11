@@ -3,14 +3,17 @@
 // import { QUERY_MATCHUPS } from '../utils/queries';
 
 import Navigation from '../components/Nav';
-import Card from '../components/Card';
+import CourseTile from '../components/CourseTile';
 
 const Home = () => {
   return (
     <div>
       <Navigation />
-      <Card />
-      
+      <main>
+        <h1>Denver Municipal Golf Courses</h1>
+        <CourseTile />
+      </main>
+
     </div>
   );
 };
