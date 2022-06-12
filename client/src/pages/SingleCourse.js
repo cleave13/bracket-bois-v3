@@ -2,10 +2,11 @@ import { useQuery } from '@apollo/client';
 import { QUERY_ALL_ROUNDS, QUERY_PLAYER_ROUND } from '../utils/queries';
 
 import Navigation from '../components/Nav';
-import { Leaderboard, Card } from '../components';
+import Card from '../components/Card';
+import Leaderboard from '../components/Leaderboard';
 
 const SingleCourse = () => {
-    const { loadingRounds, roundsData } = useQuery(QUERY_ALL_ROUNDS, {
+    const { loadingRounds, data: roundsData } = useQuery(QUERY_ALL_ROUNDS, {
         fetchPolicy: "no-cache"
     });
 
@@ -24,7 +25,7 @@ const SingleCourse = () => {
                     <div>Loading Leaderboard...</div>
                 ) : (
                     <div>
-                        <Leaderboard rounds={allRounds} />
+                        <Leaderboard rounds={allRounds} courseName={'City Perk'}/>
                     </div>
                 )};
 

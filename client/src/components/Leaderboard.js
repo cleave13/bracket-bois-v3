@@ -3,6 +3,8 @@ import Round from './Round';
 
 function Leaderboard(props) {
 
+    console.log(props.rounds)
+
     return (
         <section>
             <header>
@@ -10,12 +12,14 @@ function Leaderboard(props) {
             </header>
             <table>
                 <thead>
-                    <td>Player</td>
-                    <td>Score</td>
-                    <td>Thru</td>
+                    <tr>
+                    <th>Player</th>
+                    <th>Score</th>
+                    <th>Thru</th>
+                    </tr>
                 </thead>
                 <tbody>
-                    {props.courseRounds.map((round, i) => (
+                    {props.rounds.map((round, i) => (
                         <Round key={i} round={round} />
                     ))}
                 </tbody>
