@@ -7,11 +7,14 @@ import { CardActionArea } from '@mui/material';
 
 function CourseTile(props) {
   const course = props.course;
+
+  const greet = () => alert("Hello World!");
   
   return (
-    <Card sx={{ maxWidth: 345 }}>
-      <CardActionArea>
+    <Card className="course-tile" sx={{ maxWidth: 345 }}>
+      <CardActionArea onClick={ () => greet()}>
       <CardMedia
+        className="card-media"
         component="img"
         height="140"
         image={course.imagePath}
