@@ -1,0 +1,52 @@
+[
+    {
+        "username": "bogeytrain90",
+        "email": "bogey@train.com",
+        "password": "ishoot90!"
+    },
+    {
+        "username": "holyOne",
+        "email": "ace@golf.com",
+        "password": "itsInTheHole!"
+    },
+    {
+        "username": "sliceCity",
+        "email": "foreright@ouch.com",
+        "password": "lookout123!"
+    },
+    {
+        "username": "golfchick75",
+        "email": "lady@golfer.com",
+        "password": "better than the boys"
+    },
+    {
+        "username": "justForeFun",
+        "email": "notcompetitive@gmail.com",
+        "password": "allgood1"
+    },
+    {
+        "username": "scratcher",
+        "email": "even@par.com",
+        "password": "boringGolf"
+    },
+    {
+        "username": "birdyMachine",
+        "email": "oneunder@hole.com",
+        "password": "1putt!"
+    },
+    {
+        "username": "eagleScout",
+        "email": "twounder@golf.com",
+        "password": "betterthanbirdy"
+    },
+    {
+        "username": "19thHole",
+        "email": "beerdrinker@clubhouse.com",
+        "password": "whywerehere!"
+    },
+    {
+        "username": "steadyEddy",
+        "email": "par@master.com",
+        "password": "noBigMisses4U"
+    }
+]
