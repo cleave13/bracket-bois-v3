@@ -8,9 +8,8 @@ const roundSchema = new Schema(
       type: String,
       required: true,
     },
-    date: {
-      type: Date,
-      required: true,
+    username: {
+      type: String,
     },
     course:  {
       type: Schema.Types.ObjectId,
