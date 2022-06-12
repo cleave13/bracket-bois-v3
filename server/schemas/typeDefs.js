@@ -9,14 +9,6 @@ const typeDefs = gql`
     rounds: [Round]!
   }
 
-  scalar Date
-
-  type Round {
-    _id: ID
-    playerName(username: String!): User
-    course: Course
-  }
-
   type Course {
     _id: ID
     courseName: String
@@ -32,6 +24,16 @@ const typeDefs = gql`
     par: Int
     yardage: Int
     score: Int    
+  }
+
+  scalar Date
+
+  type Round {
+    _id: ID
+    username: String!
+    date: Date
+    course: Course
+    scores: [Int]
   }
 
   type Auth {
