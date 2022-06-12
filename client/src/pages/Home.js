@@ -4,7 +4,6 @@ import { QUERY_COURSES } from '../utils/queries';
 
 import Navigation from '../components/Nav';
 import CourseTile from '../components/CourseTile';
-import { flexbox, textAlign } from '@mui/system';
 
 const Home = () => {
   const { loading, data } = useQuery(QUERY_COURSES, {

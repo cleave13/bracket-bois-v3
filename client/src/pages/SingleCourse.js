@@ -24,9 +24,7 @@ const SingleCourse = () => {
                     <div>Loading Leaderboard...</div>
                 ) : (
                     <div>
-                        {allRounds.map((rounds, i) => (
-                            <Leaderboard key={i} course={rounds} />
-                        ))}
+                        <Leaderboard rounds={allRounds} />
                     </div>
                 )};
 

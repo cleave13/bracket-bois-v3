@@ -31,20 +31,14 @@ query Courses {
 `;
 
 export const QUERY_ALL_ROUNDS = gql`
-query Courses {
-  course {
-    _id
-    courseName
-    imagePath
-    alt
-    description
-    holes {
+query Rounds {
+  round {
+    username
+    date
+    course {
       _id
-      number
-      par
-      yardage
-      score
     }
+    scores
   }
 }
 `;
