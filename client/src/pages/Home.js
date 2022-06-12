@@ -4,6 +4,7 @@ import { QUERY_COURSES } from '../utils/queries';
 
 import Navigation from '../components/Nav';
 import CourseTile from '../components/CourseTile';
+import { flexbox, textAlign } from '@mui/system';
 
 const Home = () => {
   const { loading, data } = useQuery(QUERY_COURSES, {
@@ -12,17 +13,15 @@ const Home = () => {
 
   const courseList = data?.course || [];
 
-  console.log(courseList);
-
   return (
     <div>
       <Navigation />
       <main>
-        <h1>Select a Denver Municipal Golf Course</h1>
+        <h1 className="center-text">Select a Denver Municipal Golf Course</h1>
         {loading ? (
           <div>Loading...</div>
         ) : (
-          <div>
+          <div class="tile-container">
             {courseList.map((course, i) => (
               <CourseTile key={i} course={course} />
             ))}
