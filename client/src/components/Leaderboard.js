@@ -9,7 +9,7 @@ function Leaderboard(props) {
     return (
         <section>
             <header>
-                <h2>  {course.courseName} Leaderboard</h2>
+                <h2>{course.courseName} Leaderboard</h2>
             </header>
             <table id="leaderboard">
                 <thead>
