@@ -19,7 +19,7 @@ db.once('open', async () => {
     console.log('Reference data seeded!');
 
     // Create rounds at random
-    for (let i = 0; i < 50; i++) {
+    for (let i = 0; i < 10; i++) {
       // Get a random user's `id`
       const { username: randomUsername } = users[
         Math.floor(Math.random() * users.length)
