@@ -14,7 +14,7 @@ const SingleCourse = () => {
 
     const { courseId } = useParams();
 
-    const { loadingCourse, data: singleCourseData } = useQuery(QUERY_SINGLE_COURSE, {
+    const { data: singleCourseData } = useQuery(QUERY_SINGLE_COURSE, {
         fetchPolicy: "no-cache",
         variables: {courseId: courseId}
     });
