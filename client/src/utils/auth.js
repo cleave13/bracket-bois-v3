@@ -9,6 +9,17 @@ class AuthService {
     return token ? true : false;
   }
 
+  isTokenExpired(token) {
+    try {
+      const decoded = decode(token);
+      if (decoded.exp < Date.now() / 1000) {
+        return true;
+      } else return false;
+    } catch (err) {
+      return false;
+    }
+  }
+  
   getToken() {
     // Retrieves the user token from localStorage
     return localStorage.getItem('id_token');
