@@ -5,6 +5,9 @@ import { LOGIN_USER } from '../utils/mutations';
 import Navigation from '../components/Nav';
 import Auth from '../utils/auth';
 
+import TextField from "@mui/material/TextField";
+import Button from "@mui/material/Button";
+
 // import Auth from '../utils/auth';
 
 const Login = (props) => {
@@ -45,18 +48,19 @@ const Login = (props) => {
   return (
     <div>
       <Navigation />
-      <div className="col-12 col-lg-10">
-        <div className="card">
-          <h4 className="card-header bg-dark text-light p-2">Login</h4>
-          <div className="card-body">
             {data ? (
               <p>
                 Success! You may now head{' '}
                 <Link to="/">back to the homepage.</Link>
               </p>
             ) : (
+              <div className="login">
+              <h1>Login</h1>
+
               <form onSubmit={handleFormSubmit}>
-                <input
+                <TextField
+                  margin="dense"
+                  fullWidth
                   className="form-input"
                   placeholder="Your email"
                   name="email"
@@ -64,7 +68,10 @@ const Login = (props) => {
                   value={formState.email}
                   onChange={handleChange}
                 />
-                <input
+                <TextField
+                  margin="dense"
+                  fullWidth
+                  label="password"
                   className="form-input"
                   placeholder="******"
                   name="password"
@@ -72,14 +79,9 @@ const Login = (props) => {
                   value={formState.password}
                   onChange={handleChange}
                 />
-                <button
-                  className="btn btn-block btn-primary"
-                  style={{ cursor: 'pointer' }}
-                  type="submit"
-                >
-                  Submit
-                </button>
+                <Button sx={{mt:3}} component="button" className="submit-btn" variant="contained" type="submit" onClick={() => { console.log('button clicked')}}>Submit</Button>
               </form>
+              </div>
             )}
 
             {error && (
@@ -88,9 +90,6 @@ const Login = (props) => {
               </div>
             )}
           </div>
-        </div>
-      </div>
-    </div>
   );
 };
 
