@@ -1,5 +1,7 @@
 import { useQuery } from '@apollo/client';
-import { QUERY_ALL_ROUNDS, QUERY_PLAYER_ROUND } from '../utils/queries';
+import { useParams } from 'react-router-dom';
+import { QUERY_ALL_ROUNDS, QUERY_PLAYER_ROUND, QUERY_SINGLE_COURSE } from '../utils/queries';
+
 
 import Navigation from '../components/Nav';
 import Card from '../components/Card';
@@ -10,12 +12,22 @@ const SingleCourse = () => {
         fetchPolicy: "no-cache"
     });
 
+    const { courseId } = useParams();
+
+    const { loadingCourse, data: singleCourseData } = useQuery(QUERY_SINGLE_COURSE, {
+        fetchPolicy: "no-cache",
+        variables: {courseId: courseId}
+    });
+
     const { loadingRound, singleRoundData } = useQuery(QUERY_PLAYER_ROUND, {
         fetchPolicy: "no-cache"
     });
 
     const allRounds = roundsData?.round || [];
+    const singleCourse = singleCourseData?.course || {};
     const singleRound = singleRoundData?.round || [];
+
+    console.log(singleCourse);
 
     return (
         <div>
@@ -25,7 +37,7 @@ const SingleCourse = () => {
                     <div>Loading Leaderboard...</div>
                 ) : (
                     <div>
-                        <Leaderboard rounds={allRounds} courseName={'City Perk'}/>
+                        <Leaderboard rounds={allRounds} courseData={singleCourse}/>
                     </div>
                 )};
 
@@ -34,7 +46,7 @@ const SingleCourse = () => {
                 ) : (
                     <div>
                         {singleRound.map((playerRound, i) => (
-                            <Card key={i} singleRound={playerRound} />
+                            <Card key={i} courseData={singleCourse} singleRound={playerRound} />
                         ))}
                     </div>
                 )};

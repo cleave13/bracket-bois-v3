@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
 import { QUERY_COURSES } from '../utils/queries';
 
@@ -10,7 +9,7 @@ const Home = () => {
     fetchPolicy: "no-cache"
   });
 
-  const courseList = data?.course || [];
+  const courseList = data?.courses || [];
 
   return (
     <div>

@@ -1,6 +1,7 @@
 import * as React from 'react';
 
 function Round(props) {
+
     const round = props.round;
 
     const totalScore = round.scores.reduce(function(a,b) {
@@ -8,8 +9,6 @@ function Round(props) {
       }, 0);
 
     const thru = round.scores.length;
-
-    console.log(round);
 
     return (
         <tr>

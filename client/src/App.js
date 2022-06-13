@@ -36,7 +36,7 @@ function App() {
             element={<Signup />} 
           />
           <Route 
-            path="/SingleCourse/:id" 
+            path="/SingleCourse/:courseId" 
             element={<SingleCourse />} 
           />
         </Routes>
