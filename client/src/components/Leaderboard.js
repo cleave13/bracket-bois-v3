@@ -2,8 +2,9 @@ import * as React from 'react';
 import Round from './Round';
 
 function Leaderboard(props) {
+    const course = props.courseData;
+    console.log(course);
 
-    const course = props.courseData
 
     return (
         <section>
