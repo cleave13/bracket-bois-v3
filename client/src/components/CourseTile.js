@@ -4,14 +4,17 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 function CourseTile(props) {
   const course = props.course;
+  const coursePath = `/SingleCourse/${course._id}`
   
   return (
-    <Card sx={{ maxWidth: 345 }}>
-      <CardActionArea>
+    <Card className="course-tile" sx={{ maxWidth: 345 }}>
+      <CardActionArea href={coursePath}>
       <CardMedia
+        className="card-media"
         component="img"
         height="140"
         image={course.imagePath}

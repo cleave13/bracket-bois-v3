@@ -4,18 +4,18 @@ const courseSchema = require('./Course')
 // Schema to create Course model
 const roundSchema = new Schema(
   {
-    playerName: {
+    username: {
       type: String,
-      required: true,
+    },
+    course: {
+      type: Schema.Types.ObjectId,
+      ref: 'Course'
     },
     date: {
       type: Date,
       required: true,
     },
-    course:  {
-      type: Schema.Types.ObjectId,
-      ref: 'Course'
-  },
+    scores: [],
   },
   {
     toJSON: {

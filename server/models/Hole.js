@@ -16,9 +16,6 @@ const holeSchema = new Schema(
     yardage: {
       type: Number,
       required: true,
-    },
-    score: {
-      type: Number,
     }
   },
   {

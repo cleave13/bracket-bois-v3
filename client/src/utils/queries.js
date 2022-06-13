@@ -29,3 +29,35 @@ query Courses {
   }
 }
 `;
+
+export const QUERY_ALL_ROUNDS = gql`
+query Rounds {
+  round {
+    username
+    date
+    course {
+      _id
+    }
+    scores
+  }
+}
+`;
+
+export const QUERY_PLAYER_ROUND = gql`
+query Courses {
+  course {
+    _id
+    courseName
+    imagePath
+    alt
+    description
+    holes {
+      _id
+      number
+      par
+      yardage
+      score
+    }
+  }
+}
+`;

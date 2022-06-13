@@ -1,7 +1,7 @@
 [
   {
     "courseName": "City Park Golf Course",
-    "imagePath": "/static/cpgc-city-skyline.png",
+    "imagePath": "static/cpgc-city-skyline.png",
     "alt": "City Park Golf Course",
     "description":"City Park Golf Course is an urban parkland style course that sits in the heart of the city. Intricate water features, elevation changes and a variety of green complexes will challenge any golfer.  A spectacular panorama of the downtown skyline and mountains provide the best view in the city as you enjoy your round of golf.",
     "holes": [
@@ -197,7 +197,7 @@
   },
   {
     "courseName": "Wellshire Golf Course",
-    "imagePath": "static/wellshire.png",
+    "imagePath": "/static/wellshire.png",
     "alt": "Wellshire Golf Course",
     "description":"Wellshire Golf Course provides a country club atmosphere at an affordable price. This is the only public course West of the Mississippi that is a Donald Ross design. Walk in the steps of Ben Hogan while hitting off of lush fairways lined by mature trees.",
     "holes": [
@@ -295,7 +295,7 @@
   },
   {
     "courseName": "Kennedy Golf Course",
-    "imagePath": "static/kennedy.png",
+    "imagePath": "/static/kennedy.png",
     "alt": "Kennedy Golf Course",
     "description":"Kennedy Golf Course is a golf hub that has activities for all ages and skill levels.  This course offers a variety of options with 27-holes of regulation golf or nine-holes of par 3 golf.  For family fun, play golf or FootGolf on the par three, or take a shot at the putt putt course.  You can also enjoy practice time on the lighted driving range and grab a bite to eat at the snack bar or restaurant.",
     "holes": [
@@ -393,7 +393,7 @@
   },
   {
     "courseName": "Overland Park Golf Course",
-    "imagePath": "static/overland.png",
+    "imagePath": "/static/overland.png",
     "alt": "Overland Park Golf Course",
     "description":"Overland Park Golf Course is steeped in Denver history. The original Denver Country Club, this is the oldest running course West of the Mississippi. Conveniently located minutes from downtown, you can enjoy views of both the city and the mountains. Narrow fairways and small greens that are well-bunkered offer a challenge to golfers of any skill level.",
     "holes": [
@@ -491,7 +491,7 @@
   },
   {
     "courseName": "Evergreen Golf Course",
-    "imagePath": "static/evergreen.png",
+    "imagePath": "/static/evergreen.png",
     "alt": "Evergreen Golf Course",
     "description":"Evergreen Golf Course is Denver's mountain jewel. At 7,220 feet, this 18-hole executive course sits along Bear Creek.  Rolling hills and fairways lined with pine trees make this an affordable mountain golf experience just a short drive from the city.  Elk and other wildlife sightings are frequent on the course, and after golf, you can enjoy delicious food and drinks on the patio at Keys On The Green.",
     "holes": [
