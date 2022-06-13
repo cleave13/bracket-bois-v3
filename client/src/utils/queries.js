@@ -73,3 +73,15 @@ query Courses {
   }
 }
 `;
+
+export const QUERY_COURSE_HOLES = gql`
+query SingleCourse($courseId: ID!) {
+  course(courseId: $courseId) {
+    courseName
+    holes {
+      number
+      par
+      yardage
+    }
+  }
+}`
