@@ -6,7 +6,7 @@ const typeDefs = gql`
     username: String
     email: String
     password: String
-    rounds: [Round]!
+    rounds: [Round]
   }
 
   type Course {
@@ -22,8 +22,7 @@ const typeDefs = gql`
     _id: ID
     number: Int
     par: Int
-    yardage: Int
-    score: Int    
+    yardage: Int  
   }
 
   scalar Date
@@ -44,7 +43,8 @@ const typeDefs = gql`
   type Query {
     users: [User]
     user(username: String!): User
-    course: [Course]
+    courses: [Course]
+    course(courseId: ID!): Course
     holes: [Hole]
     rounds(username: String): [Round]
     round: [Round]

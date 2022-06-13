@@ -93,3 +93,11 @@ form {
 .center-text {
   text-align: center;
 }
+
+#leaderboard td {
+  text-align: left;
+}
+
+#leaderboard tbody {
+  background-color: white;
+}

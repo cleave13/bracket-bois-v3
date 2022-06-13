@@ -2,15 +2,16 @@ import * as React from 'react';
 import Round from './Round';
 
 function Leaderboard(props) {
+    const course = props.courseData;
+    console.log(course);
 
-    console.log(props.rounds)
 
     return (
         <section>
             <header>
-                <h2>Testing {props.courseName}</h2>
+                <h2>{course.courseName} Leaderboard</h2>
             </header>
-            <table>
+            <table id="leaderboard">
                 <thead>
                     <tr>
                     <th>Player</th>
@@ -20,7 +21,7 @@ function Leaderboard(props) {
                 </thead>
                 <tbody>
                     {props.rounds.map((round, i) => (
-                        <Round key={i} round={round} />
+                        <Round key={i} round={round} course={course}/>
                     ))}
                 </tbody>
             </table>

@@ -6,7 +6,6 @@ import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
-import Profile from './pages/Profile';
 import SingleCourse from './pages/SingleCourse';
 
 const client = new ApolloClient({
@@ -28,15 +27,11 @@ function App() {
             element={<Login />} 
           />
           <Route 
-            path="/Profile" 
-            element={<Profile />} 
-          />
-          <Route 
             path="/Signup" 
             element={<Signup />} 
           />
           <Route 
-            path="/SingleCourse/:id" 
+            path="/SingleCourse/:courseId" 
             element={<SingleCourse />} 
           />
         </Routes>

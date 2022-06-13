@@ -1,10 +1,51 @@
-# Getting Started with Create React App
+# Bracket Bois - Golf App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
 
-## Available Scripts
+The bracket bois golf app provides a fun interactive experience for the average golfer to experience tournament leaderboards at their local municipal colf course. 
 
-In the project directory, you can run:
+It leverages the latest technologies, including: a front-end user interface built completely from React, Apollo Server to handle all of the front-end routes, GraphQL mutations and queries to interact with the Mongo Database. Authentication for the app is handled using JSON web tokens and the app leverages CSS properties like flexbox to make it mobile responsive for smaller screens. 
+
+The application is hosted on Heroku, and compressed using webpack to optimize the production build and make it lightweight and fast even for users on small devices.
+
+## Badges
+
+![badmath](https://img.shields.io/github/languages/top/lernantino/badmath) ![license](https://img.shields.io/github/license/Cleave13/bracket-bois-v3)
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
+
+## Installation
+
+The Bracket Bois - Golf App is deployed to heroku, so end user just looking to use the application don't need to install anything. Just click [here](https://stormy-tundra-99925.herokuapp.com/) to access the deployed production application.
+
+Being an open source repository, however, developers may view the source code and run the application locally to enhance features. To install locally to your machine, fork the repository from Github and clone it to your local environment. 
+
+Once installed locally, use the `npm i` command line prompt to install all of the package dependencies for the application. Check the connection file in the /server/config directory to ensure that the details will allow for connection to your MongoDB environment (you will need to create a MongoDB account if you do not already have one). 
+
+The last step before starting the application is to run `npm run seed`, which will seed the MongoDB with the sample users, courses and rounds required for the application to run.
+
+## Usage
+
+This application is intended for use by the amatuer golfers playing rounds at any one of the City of Denver's municipal golf courses. The user must signup or login to access many of the features of the app. 
+
+![signup page](./client/public/static/app-signup.png)
+
+Once authenticated, they may select a course from the list of Denver's six municipal golf courses. 
+
+![homepage](./client/public/static/app-home.png)
+
+Doing so will take them to the "SingleCourse" page where they can see a live leaderboard of all the other players playing that course for the day. The scorecard component at the bottom of the page is linked to the leaderboard at the top, so any scores entered below will immediately reflect in the leaderboard.
+
+![course page](./client/public/static/app-single-course.png)
+
+The following sections outline the steps for running the application locally and packaging the completed build for a production deployment.
 
 ### `npm start`
 
@@ -14,11 +55,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
 ### `npm run build`
 
 Builds the app for production to the `build` folder.\
@@ -27,44 +63,18 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## License
 
-### `npm run eject`
+This project is licensed under the terms of the [MIT license](https://choosealicense.com/licenses/mit/).
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Contributing
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+We are always looking to make our application better. Please contact the email address below if you have recommendations for how this app could be improved. We recognize the need for better state management throughout the application to optimize the user's experience and keep all of the components operating in concert. Any contributions to that area would be especially appreciated.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Tests
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+This application does not use any tests.
 
-## Learn More
+## Questions
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This application was created by [Chris Leavengood, Chris Tierney, and Clayton Weber (the Bracket Bois)](https://github.com/Cleave13). Any questions related to this application can be sent to chrisleavengood@gmail.com
