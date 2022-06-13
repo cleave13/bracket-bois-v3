@@ -6,7 +6,7 @@ const typeDefs = gql`
     username: String
     email: String
     password: String
-    rounds: [Round]!
+    rounds: [Round]
   }
 
   type Course {
