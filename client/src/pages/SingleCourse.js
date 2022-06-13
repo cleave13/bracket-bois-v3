@@ -42,7 +42,7 @@ const SingleCourse = () => {
                     </div>
                 )};
 
-                {loadingCourse ? (
+                {loadingRounds ? (
                     <div>Loading Scorecard...</div>
                 ) : (
                     <div>
