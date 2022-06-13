@@ -24,8 +24,9 @@ const SingleCourse = () => {
     });
 
     const allRounds = roundsData?.round || [];
-    const singleCourse = singleCourseData?.course || {};
-    const singleRound = singleRoundData?.round || [];
+    const singleCourse = singleCourseData?.course || [];
+    // const singleRound = singleRoundData?.round || [];
+    const allHoles = singleCourseData?.course.holes || [];
 
     console.log(singleCourse);
 
@@ -41,13 +42,13 @@ const SingleCourse = () => {
                     </div>
                 )};
 
-                {loadingRound ? (
+                {loadingCourse ? (
                     <div>Loading Scorecard...</div>
                 ) : (
                     <div>
-                        {singleRound.map((playerRound, i) => (
-                            <Card key={i} courseData={singleCourse} singleRound={playerRound} />
-                        ))}
+                        {/* {singleRound.map((playerRound, i) => ( */}
+                            <Card courseData={singleCourse} holeData={allHoles}/>
+                        {/* ))} */}
                     </div>
                 )};
             </main>

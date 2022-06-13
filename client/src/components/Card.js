@@ -1,4 +1,7 @@
 import * as React from 'react';
+import { useQuery } from '@apollo/client';
+import { useParams } from 'react-router-dom';
+import { QUERY_COURSE_HOLES } from '../utils/queries'
 
 // const holes =  ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18'];
 const frontNine = ['1', '2', '3', '4', '5', '6', '7', '8', '9'];
@@ -36,8 +39,20 @@ const fakeParsTot = fakeBackParsIn + fakeFrontParsOut;
 // const scores = ['']
 
 
-
 function Card() {
+
+  const { courseId } = useParams();
+
+  const { loadingHoles, data: holeData } = useQuery(QUERY_COURSE_HOLES, {
+      fetchPolicy: "no-cache",
+      variables: {courseId: courseId}
+  });
+
+  const allHoles = holeData?.course.holes
+
+  console.log(allHoles);
+
+  
   return(
     <div id="scorecard">
       <h1>Score Card</h1>

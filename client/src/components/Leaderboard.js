@@ -2,11 +2,13 @@ import * as React from 'react';
 import Round from './Round';
 
 function Leaderboard(props) {
+    const course = props.courseData;
+    console.log(course);
 
     return (
         <section>
             <header>
-                <h2>Testing {props.courseName}</h2>
+                <h2>Testing {course.courseName}</h2>
             </header>
             <table>
                 <thead>
