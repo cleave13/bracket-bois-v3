@@ -15,8 +15,11 @@ const resolvers = {
       round: async () => {
         return Round.find({});
       },
-      course: async () => {
+      courses: async () => {
         return Course.find({});
+      },
+      course: async (parent, { courseId }) => {
+        return Course.findOne({ _id: courseId });
       },
       holes: async (parent, { _id }) => {
         const params = _id ? { _id } : {};

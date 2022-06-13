@@ -3,8 +3,6 @@ import Round from './Round';
 
 function Leaderboard(props) {
 
-    console.log(props.rounds)
-
     return (
         <section>
             <header>

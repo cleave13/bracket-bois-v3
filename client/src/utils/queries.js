@@ -13,7 +13,7 @@ export const QUERY_USER = gql`
 
 export const QUERY_COURSES = gql`
 query Courses {
-  course {
+  courses {
     _id
     courseName
     imagePath
@@ -24,11 +24,23 @@ query Courses {
       number
       par
       yardage
-      score
     }
   }
 }
 `;
+
+export const QUERY_SINGLE_COURSE = gql`
+query SingleCourse($courseId: ID!) {
+  course(courseId: $courseId) {
+    courseName
+    description
+    holes {
+      number
+      par
+      yardage
+    }
+  }
+}`
 
 export const QUERY_ALL_ROUNDS = gql`
 query Rounds {
