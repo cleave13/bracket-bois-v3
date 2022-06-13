@@ -33,11 +33,17 @@ The last step before starting the application is to run `npm run seed`, which wi
 
 ## Usage
 
-This application is intended for use by the amatuer golfers playing rounds at any one of the City of Denver's municipal golf courses. The user must signup or login to access many of the features of the app. Once authenticated, they may select a course from the list of Denver's six municipal golf courses. 
+This application is intended for use by the amatuer golfers playing rounds at any one of the City of Denver's municipal golf courses. The user must signup or login to access many of the features of the app. 
 
+![signup page](./client/public/static/app-signup.png)
 
+Once authenticated, they may select a course from the list of Denver's six municipal golf courses. 
+
+![homepage](./client/public/static/app-home.png)
 
 Doing so will take them to the "SingleCourse" page where they can see a live leaderboard of all the other players playing that course for the day. The scorecard component at the bottom of the page is linked to the leaderboard at the top, so any scores entered below will immediately reflect in the leaderboard.
+
+![course page](./client/public/static/app-single-course.png)
 
 The following sections outline the steps for running the application locally and packaging the completed build for a production deployment.
 
